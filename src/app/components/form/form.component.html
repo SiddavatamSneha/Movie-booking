@@ -1,0 +1,128 @@
+<div class="form-body">
+  <div id="film">
+    <article class="postcard dark red">
+      <a class="postcard__img_link" href="#">
+        <img
+          class="postcard__img"
+          src="{{ movie_data.img_url }}"
+          alt="Movie Poster"
+        />
+      </a>
+      <div class="postcard__text">
+        <h1 class="postcard__title red">
+          <a href="#">{{ movie_data.name }}</a>
+        </h1>
+
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">{{ movie_data.plot }}</div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item">
+            <i class="fas fa-clock mr-2"></i>{{ movie_data.duration }}
+          </li>
+          <li class="tag__item">
+            <i class="fas fa-clock mr-2"></i>{{ movie_data.tickets }} Tickets
+          </li>
+          <li class="tag__item play red">
+            <a href="{{ movie_data.trailer }}" target="_blank"
+              ><i class="fas fa-play mr-2"></i>Watch Trailer</a
+            >
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <div id="form">
+    <form [formGroup]="myForm" (ngSubmit)="submitHandlerBook(myForm)">
+      <div class="row mb-3">
+        <label for="name" class="col-form-label">Name</label>
+        <br />
+        <div>
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control"
+            id="inputEmail3"
+          />
+        </div>
+      </div>
+      <div *ngIf="!name.valid && (name.dirty || name.touched)">
+        <p style="color: wheat">*Name is required</p>
+      </div>
+      <br />
+      <div class="row mb-3">
+        <label for="email" class="col-form-label">E-mail</label> <br />
+        <div>
+          <input
+            type="email"
+            formControlName="email"
+            class="form-control"
+            id="inputPassword3"
+          />
+        </div>
+      </div>
+
+      <div *ngIf="!email.valid && (email.dirty || email.touched)">
+        <p style="color: wheat">*E-mail is required</p>
+      </div>
+      <br />
+
+      <div class="row mb-3">
+        <label for="email" class="col-form-label">Contact</label> <br />
+        <div>
+          <input
+            type="text"
+            formControlName="contact"
+            class="form-control"
+            id="inputPassword3"
+          />
+        </div>
+      </div>
+
+      <div *ngIf="!contact.valid && (contact.dirty || contact.touched)">
+        <p style="color: wheat">*Contact is required</p>
+      </div>
+      <br />
+
+      <div>
+        <label for="timings" class="col-form-label">Timings: </label> <br />
+        <select
+          name="timings"
+          formControlName="timings"
+          id="inputState"
+          class="form-select"
+        >
+          <option value="" selected disabled hidden>Choose Timings</option>
+          <option value="Morning Show">Morning Show</option>
+          <option value="Afternoon Show">Afternoon Show</option>
+          <option value="Evening Show">Evening Show</option>
+          <option value="Night Show">Night Show</option>
+        </select>
+      </div>
+
+      <div *ngIf="!tickets.valid && (tickets.dirty || tickets.touched)">
+        <p style="color: wheat">*Choose a Timing</p>
+      </div>
+      <br />
+
+      <div class="row mb-3">
+        <label for="" class="col-form-label">Number of Seats: </label> <br />
+        <div>
+          <input
+            type="text"
+            formControlName="tickets"
+            class="form-control"
+            id="inputPassword3"
+          />
+        </div>
+      </div>
+
+      <div *ngIf="!tickets.valid && (tickets.dirty || tickets.touched)">
+        <p style="color: wheat">*Tickets are required</p>
+      </div>
+      <br />
+
+      <button type="submit" class="btn btn-primary" id="btn-style">Book</button>
+      
+    </form>
+  </div>
+</div>

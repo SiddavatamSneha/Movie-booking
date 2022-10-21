@@ -1,0 +1,63 @@
+[
+    {
+     "id": "1",
+     "name": "The Assassin",
+     "img_url": "assets/assasin.jfif",
+     "tickets": 87,
+   "duration": "1h 45m",
+   "trailer":"https://www.youtube.com/watch?v=CKFtNsQ78oI",
+     "plot": "A female assassin receives a dangerous mission to kill a political leader in eighth-century China."
+     
+    },
+    {
+     "id": "2",
+     "name": "Joker",
+     "img_url": "assets/joker.jpg",
+     "tickets": 73,
+    "duration": "2h 2m",
+   "trailer":"https://www.youtube.com/watch?v=zAGVQLHvwOY",
+     "plot": "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain."
+    
+    },
+    {
+     "id": "3",
+     "name": "Titanic",
+     "img_url": "assets/titanic.jfif",
+     "tickets": 100,
+     "duration": "3h 14m",
+   "trailer":"https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+     "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+     
+    },
+    {
+     "id": "4",
+     "name": "Avengers: Endgame",
+     "img_url": "assets/avengers.jfif",
+     "tickets": 90,
+     "duration": "3h 1m",
+   "trailer":"https://www.youtube.com/watch?v=TcMBFSGVi1c",
+     "plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+     
+    },
+    {
+     "id": "5",
+     "name": "Lagaan: Once Upon a Time in India",
+     "img_url": "assets/lagaan.jfif",
+     "tickets": 88,
+    "duration": "3h 44m",
+   "trailer":"https://www.youtube.com/watch?v=Nhi4Azs2nEw",
+     "plot": "The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers."
+     
+    },
+    {
+     "id": "6",
+     "name": "1917",
+     "img_url": "assets/i_1917.jfif",
+     "tickets": 99,
+      "duration": "1h 59m",
+   
+   "trailer":"https://www.youtube.com/watch?v=YqNYrYUiMfg",
+     "plot": "April 6th, 1917. As an infantry battalion assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap."
+   
+    }
+   ]
